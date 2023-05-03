@@ -8,7 +8,7 @@ export class ApiService {
 
   constructor(public http: HttpClient) { }
 
-  url="https://localhost:7080/api/"
+  url="https://localhost:7024/api/"
 
 async getall(Controller:string){
   var response:any
