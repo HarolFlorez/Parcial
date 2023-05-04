@@ -24,6 +24,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { TablaComponent } from './Components/tabla/tabla.component';
 import { LoginComponent } from './Components/login/login.component';
+import { FormularioRepuestosComponent } from './Components/Forms/formulario-repuestos/formulario-repuestos.component';
+import { FormularioVehiculosComponent } from './Components/Forms/formulario-vehiculos/formulario-vehiculos.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { LoginComponent } from './Components/login/login.component';
     RepuestosComponent,
     MenuComponent,
     TablaComponent,
-    LoginComponent
+    LoginComponent,
+    FormularioRepuestosComponent,
+    FormularioVehiculosComponent
   ],
   imports: [
     HttpClientModule,

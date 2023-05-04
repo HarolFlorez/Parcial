@@ -1,0 +1,32 @@
+<div class="container">
+    <form class="example-form" [formGroup]="vehiculo_form" novalidate (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Marca</mat-label>
+          <input matInput placeholder="Ex: audi" formControlName="marca">
+          <mat-error *ngIf="vehiculo_form.controls['marca'].hasError('required')">
+            Este campo es <strong>obligatorio*</strong>
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width">
+          <mat-label>Color</mat-label>
+          <input matInput placeholder="ex: morado" formControlName="color">
+          <mat-error *ngIf="vehiculo_form.controls['color'].hasError('required')">
+            Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Modelo</mat-label>
+            <input matInput placeholder="ex: 2019" formControlName="modelo">
+            <mat-error *ngIf="vehiculo_form.controls['modelo'].hasError('required')">
+              Este campo es <strong>obligatorio*</strong>
+          </mat-error>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Placa</mat-label>
+            <input matInput placeholder="ex: QWE123" formControlName="placa">
+            <mat-error *ngIf="vehiculo_form.controls['placa'].hasError('required')">
+              Este campo es <strong>obligatorio*</strong>
+          </mat-error>
+        </mat-form-field>
+  
