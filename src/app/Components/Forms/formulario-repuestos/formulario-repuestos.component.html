@@ -1,25 +1,30 @@
 <div class="container">
-    <form class="example-form" [formGroup]="repuestos_form" novalidate (ngSubmit)="onSubmit()">
-        <mat-form-field class="example-full-width">
-          <mat-label>Vehiculo</mat-label>
-          <input matInput placeholder="Ex: carro" formControlName="vehiculo">
-          <mat-error *ngIf="repuestos_form.controls['vehiculo'].hasError('required')">
-            Este campo es <strong>obligatorio*</strong>
-          </mat-error>
-        </mat-form-field>
-  
-        <mat-form-field class="example-full-width">
-          <mat-label>Valor</mat-label>
-          <input matInput placeholder="ex: 5000" formControlName="valor">
-          <mat-error *ngIf="repuestos_form.controls['valor'].hasError('required')">
-            Este campo es <strong>obligatorio*</strong>
+  <form class="example-form" [formGroup]="repuestosForm" novalidate (ngSubmit)="onSubmit()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Vehiculo</mat-label>
+        <input matInput placeholder="ej: carro" formControlName="vehiculo">
+        <mat-error *ngIf="repuestosForm.controls['vehiculo'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
         </mat-error>
+      </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <mat-label>Tipo</mat-label>
-            <input matInput placeholder="ex: 5000" formControlName="tipo">
-            <mat-error *ngIf="repuestos_form.controls['tipo'].hasError('required')">
-              Este campo es <strong>obligatorio*</strong>
-          </mat-error>
-        </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Valor</mat-label>
+        <input matInput placeholder="ej: 5000" formControlName="valor">
+        <mat-error *ngIf="repuestosForm.controls['valor'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Tipo</mat-label>
+        <input matInput placeholder="ej: mecanico" formControlName="tipo">
+        <mat-error *ngIf="repuestosForm.controls['tipo'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button >Crear</button>
+  </form>
+</div>
+
   

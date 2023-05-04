@@ -1,0 +1,36 @@
+.full-width {
+    width: 100%;
+  }
+  
+  .shipping-card {
+    width: 400px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(110, 139, 151);
+    text-align: center;
+    border-radius: 10%;
+  }
+  
+  .mat-radio-button {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  .letra{
+    margin-left: auto;
+    margin-right: auto;
+  }

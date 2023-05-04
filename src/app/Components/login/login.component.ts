@@ -18,14 +18,14 @@ export class LoginComponent {
   em="";
   pass="";
   loginForm= new FormGroup({
-    username: new FormControl('',Validators.required),
-    password: new FormControl('',Validators.compose([Validators.required, Validators.minLength(8)]))
+    usuario: new FormControl('',Validators.required),
+    password: new FormControl('',Validators.required)
   });
 
   async onSubmit(){
-    this.em = this.loginForm.controls["username"].value;
+    this.em = this.loginForm.controls["usuario"].value;
     this.pass = this.loginForm.controls["password"].value;
-    if(this.em==="usuario" && this.pass==="12345678"){
+    if(this.em==="usuario" && this.pass==="123"){
      Swal.fire(
   	'Good job!',
  	 'You clicked the button!',
@@ -39,7 +39,7 @@ export class LoginComponent {
         icon:"error",
         title:"Ooops..",
         text: "Datos de logueo fallidos",
-        footer: "Intente: usuario: usuario contraseña: 12345678"
+        footer: "Intente: usuario: usuario contraseña: 123"
       })
     }
   }
